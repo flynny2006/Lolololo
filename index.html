@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Builder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <!-- react-beautiful-dnd requires React 16.8+ -->
+    <!-- uuid for generating unique IDs -->
+    <style>
+      /* Ensure scrollbar matches the dark theme */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #171717; /* neutral-900 */
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #525252; /* neutral-600 */
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #737373; /* neutral-500 */
+      }
+      body {
+        background-color: #000000 !important; /* Strict black background, !important to override potential conflicts */
+        color: #ffffff;
+      }
+      /* Basic reset for better consistency */
+      *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      /* Styling for react-beautiful-dnd placeholders */
+      .rbd-placeholder {
+        background-color: #2a2a2a; /* Dark placeholder for contrast */
+        border: 1px dashed #555;
+        min-height: 50px; /* Ensure placeholder is visible */
+        border-radius: 4px;
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@19.0.0-rc.0/",
+    "react": "https://esm.sh/react@19.0.0-rc.0",
+    "react-dom/": "https://esm.sh/react-dom@19.0.0-rc.0/",
+    "react-dom": "https://esm.sh/react-dom@19.0.0-rc.0",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@^2.50.0",
+    "react-beautiful-dnd": "https://esm.sh/react-beautiful-dnd@13.1.1?external=react,react-dom",
+    "uuid": "https://esm.sh/uuid@9.0.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-black text-white antialiased">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>

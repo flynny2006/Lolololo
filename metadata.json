@@ -1,0 +1,5 @@
+{
+  "name": "Monochromatic Website Builder UI with Supabase",
+  "description": "A user interface in a stark black and white theme for website project management. Features Supabase-powered user authentication (login/register), project creation, and listing of user-specific projects.",
+  "requestFramePermissions": []
+}
